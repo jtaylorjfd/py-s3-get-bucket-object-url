@@ -9,6 +9,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install boto3.
 ```bash
 pip install boto3
 ```
+The library re is optional for string manipulation.
 
 
 ## Contributing
