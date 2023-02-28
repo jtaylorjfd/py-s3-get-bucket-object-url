@@ -1,6 +1,6 @@
 # py-s3-get-bucket-object-url
 
-Using the python Boto3 library to get S3 bucket title and object URL
+Using the python Boto3 library to get S3 bucket title and object URL and translates into a JSON format
 
 ## Installation
 
