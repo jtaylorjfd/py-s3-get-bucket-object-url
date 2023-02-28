@@ -10,6 +10,6 @@ all_objects = s3.list_objects(Bucket = 'BUCKET')
 
 for i in all_objects['Contents']:
     #string manipulation
-    title = 'APP '+ re.sub(r'^.*?APP', '', i['Key'])[1:-4]
-    url ='https://BUCKET.s3.REGION_NAME.amazonaws.com/'+ i['Key'].replace(" ", "+")
+    title = 'APP '+ re.sub(r'^.*?APP', '', i['Key'])[1:-4] 
+    url ='https://'+BUCKET+'.s3.'+REGION_NAME+'.amazonaws.com/'+ i['Key'].replace(" ", "+")
     print('{ title: "'+title+'",'+'url: "'+ url+'"},')
